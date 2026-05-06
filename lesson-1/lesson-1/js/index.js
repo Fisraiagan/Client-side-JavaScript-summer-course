@@ -32,9 +32,10 @@
 		// STEP 4: Create a function that waits for the above click event
 		
 			// STEP 4a: Display a prompt asking for input, and assign the input to a variable using let
-			
+			let firstName = prompt('What is your first name?');
 			// STEP 4b: Grab the input from the variable and build a new string, then change the text inside the EM element, using the textContent property
-			}
+			
+		element.textContent = 'Hello, ' + firstName;}
 		
 		// STEP 5: Comment out the addEventListener above, and replace it with an onclick attribute typed directly into the EM element in the HTML - note that this is common, but it is considered to be bad practice - separate your HTML and your JS
 
