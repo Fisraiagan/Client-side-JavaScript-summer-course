@@ -10,7 +10,7 @@ ageInput = document.querySelector("#ageInput");
 updateAgeButton = document.querySelector("#updateAgeButton");
 updateNameButton = document.querySelector("#updateNameButton");
 
-/* Set initial content for the character */
+/* Set initial content*/
 isSuperhero.textContent = 'Is a Superhero: '+' '+true;
 specialPowers.textContent = 'Special Powers: '+' '+'Flying, Super Strength, acrobatics';
 favoriteFood.textContent = 'Favorite Food: '+' '+'Hamburger';
@@ -29,11 +29,16 @@ age.textContent = 'Age is'+' '+randomAge;
 
 /* Add event listeners to the updateAgeButton to update the age*/
 updateAgeButton.addEventListener("click", function() {
-    /* update the age object with the new value */
+    /* update the age content with new value */
     age.textContent = 'Age is'+' '+ageInput.value;
-    /* Slice the age object to get the new age value */
+    /* Slice the age object to get the just the age content */
     agedSliced = age.textContent.slice(7);
-    description.textContent = 'Say hello to'+' '+characterNameSliced+', a superhero with the power of'+' '+powersSliced +'!'+' '+'They are'+' '+agedSliced+' '+'years old and their favorite food is'+' '+FoodSliced+'.';
+
+    /* Update the description with the new age content */
+    description.textContent = 'Say hello to'+' '+characterNameSliced+
+    ', a superhero with the power of'+' '+powersSliced 
+    +'!'+' '+'They are'+' '+agedSliced+' '
+    +'years old and their favorite food is'+' '+FoodSliced+'.';
 
     
 });
@@ -41,13 +46,21 @@ updateAgeButton.addEventListener("click", function() {
 
 /* Add event listeners to the updateNameButton to update the character name*/
 updateNameButton.addEventListener("click", function() {
-    /* update the characterName object with the new value */
+    /* update the characterName content with the new value */
     characterName.textContent = 'Character Name: '+' '+userNameInput.value;
-    /* Slice the characterName object to get the new character name value */
+    /* Slice the characterName object to get just the character name content */
     characterNameSliced = characterName.textContent.slice(16);
 
-    description.textContent = 'Say hello to'+' '+characterNameSliced+', a superhero with the power of'+' '+powersSliced +'!'+' '+'They are'+' '+agedSliced+' '+'years old and their favorite food is'+' '+FoodSliced+'.';
+    /* Update the description with the new character name content */
+    description.textContent = 'Say hello to'+' '+characterNameSliced+
+    ', a superhero with the power of'+' '+powersSliced 
+    +'!'+' '+'They are'+' '+agedSliced+' '
+    +'years old and their favorite food is'+' '+FoodSliced+'.';
 
 });
 
-description.textContent = 'Say hello to'+' '+characterNameSliced+', a superhero with the power of'+' '+powersSliced +'!'+' '+'They are'+' '+agedSliced+' '+'years old and their favorite food is'+' '+FoodSliced+'.';
+/* Set the initial description content with the initial values */
+description.textContent = 'Say hello to'+' '+characterNameSliced+
+', a superhero with the power of'+' '+powersSliced 
++'!'+' '+'They are'+' '+agedSliced+' '
++'years old and their favorite food is'+' '+FoodSliced+'.';
