@@ -14,7 +14,16 @@ isSuperhero.textContent = 'Is a Superhero: '+' '+true;
 specialpowers.textContent = 'Special Powers: '+' '+'Flying, Super Strength, acrobatics';
 favoriteFood.textContent = 'Favorite Food: '+' '+'Hamburger';
 
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomAge = Math.floor(Math.random() * 100) + 1;
 
 
 
+updateAgeButton.addEventListener("click", function() {
+age.textContent = 'Age is'+' '+ageInput.value;
+});
+
+
+updateNameButton.addEventListener("click", function() {
+
+characterName.textContent = 'Character Name: '+' '+userNameInput.value;
+});
