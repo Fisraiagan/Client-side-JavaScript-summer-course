@@ -9,6 +9,8 @@ userNameInput = document.querySelector("#characterName");
 ageInput = document.querySelector("#ageInput");
 updateAgeButton = document.querySelector("#updateAgeButton");
 updateNameButton = document.querySelector("#updateNameButton");
+ageIncreaseButton = document.querySelector("#ageIncreaseButton");
+ageDecreaseButton = document.querySelector("#ageDecreaseButton");
 
 /* Set initial content*/
 isSuperhero.textContent = 'Is a Superhero: '+' '+true;
@@ -64,3 +66,33 @@ description.textContent = 'Say hello to'+' '+characterNameSliced+
 ', a superhero with the power of'+' '+powersSliced 
 +'!'+' '+'They are'+' '+agedSliced+' '
 +'years old and their favorite food is'+' '+FoodSliced+'.';
+
+
+ageIncreaseButton.addEventListener("click", function() {
+    /* Increase the age content by 1 */
+    randomAge++;
+    age.textContent = 'Age is'+' '+randomAge;
+    /* Slice the age object to get just the age content */
+    agedSliced = age.textContent.slice(7);
+
+     /* Update the description with the new age content */
+    description.textContent = 'Say hello to'+' '+characterNameSliced+
+    ', a superhero with the power of'+' '+powersSliced 
+    +'!'+' '+'They are'+' '+agedSliced+' '
+    +'years old and their favorite food is'+' '+FoodSliced+'.';
+
+
+});
+
+ageDecreaseButton.addEventListener("click", function() {
+    /* Decrease the age content by 1 */
+    randomAge--;
+    age.textContent = 'Age is'+' '+randomAge;
+    /* Slice the age object to get just the age content */
+    agedSliced = age.textContent.slice(7);
+    /* Update the description with the new age content */
+    description.textContent = 'Say hello to'+' '+characterNameSliced+
+    ', a superhero with the power of'+' '+powersSliced 
+    +'!'+' '+'They are'+' '+agedSliced+' '
+    +'years old and their favorite food is'+' '+FoodSliced+'.';
+});
