@@ -21,3 +21,6 @@ else if(missionProgress > 70 && enemyNearby === false){
     msg.textContent = "Approaching Mission Completion.";
     
 }
+else if(missionProgress === 100){
+    msg.textContent = "Mission Complete successfully!";
+}
