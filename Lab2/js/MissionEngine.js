@@ -24,3 +24,6 @@ else if(missionProgress > 70 && enemyNearby === false){
 else if(missionProgress === 100){
     msg.textContent = "Mission Complete successfully!";
 }
+else{
+    msg.textContent = "System Stable.";
+}
