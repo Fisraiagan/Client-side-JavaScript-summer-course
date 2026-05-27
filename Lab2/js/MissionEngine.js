@@ -14,3 +14,6 @@ if(health < 30 && enemyNearby === true){
 else if(ammo < 5 || shield === false){
     msg.textContent = "Warning: Low resources.";
 }
+else if(missionProgress > 1 && missionProgress < 70){
+    msg.textContent = "Mission in progress.";
+}
