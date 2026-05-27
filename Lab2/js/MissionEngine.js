@@ -11,3 +11,6 @@ let enemyNearby = true;
 if(health < 30 && enemyNearby === true){
     msg.textContent = " CRITICAL ALERT: Immediate evacuation required!";
 }
+else if(ammo < 5 || shield === false){
+    msg.textContent = "Warning: Low resources.";
+}
