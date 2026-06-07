@@ -114,3 +114,8 @@ agentTypeBtn.addEventListener ('click', function() {
     //output the new risk level to the page
     riskLevelOutput.textContent = riskLevel[indexRiskLevel];
 }); 
+
+
+
+generateBtn.addEventListener('click', generateMission);
+resetBtn.addEventListener('click', resetMission);
