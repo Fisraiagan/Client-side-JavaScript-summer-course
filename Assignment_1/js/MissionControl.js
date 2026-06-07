@@ -38,3 +38,18 @@ function cycle(array, index) {
         } 
     return index;
 }
+
+//Generate a Mission statement based on the selected parameters.
+function generateMission() {
+    //if any of the output fields are empty, prompt the user to select all parameters
+    if(!agentTypeOutput.textContent || !locationOutput.textContent || !weaponLoadoutOutput.textContent 
+        || !objectiveOutput.textContent || !riskLevelOutput.textContent) {
+            missionOutput.textContent = "Please select all mission parameters before generating a mission.";
+    }
+    //if all parameters are selected, generate the mission statement
+    else {
+        missionOutput.textContent = 'Your new mission is to ' + objectiveOutput.textContent + ' at ' 
+        + locationOutput.textContent + ' with a ' + riskLevelOutput.textContent + ' risk level. You will be using a '
+         + weaponLoadoutOutput.textContent + ' and your agent type is ' + agentTypeOutput.textContent + '. Good luck!';
+    }
+}
