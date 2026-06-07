@@ -20,3 +20,21 @@ const weaponLoadout = ['Assault Rifle', 'Sniper Rifle', 'silenced pistol'];
 const objective = ['Reconnaissance', 'Elimination', 'Extraction'];
 const riskLevel = ['Low', 'Medium', 'High'];
 
+//Initialize index variables for each category
+let indexAgentType = 0;
+let indexLocation = 0;
+let indexWeaponLoadout = 0;
+let indexObjective = 0;
+let indexRiskLevel = 0;
+
+// This function takes an array and an index, increments the index,
+//  and resets it to zero if it exceeds the array length. 
+// It returns the new index.
+function cycle(array, index) {
+    index++;
+    if (index >= array.length)
+        {
+            index = 0;
+        } 
+    return index;
+}
