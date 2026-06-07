@@ -73,3 +73,44 @@ function resetMission() {
 
 
 }
+
+// Add event listeners to buttons
+agentTypeBtn.addEventListener ('click', function() {
+    //agent
+    //cycle through the agent types array
+    indexAgentType = cycle(agentType, indexAgentType);
+    //output the new agent type to the page
+    agentTypeOutput.textContent = agentType[indexAgentType]; 
+    });
+    
+    locationBtn.addEventListener ('click', function() {
+    //location
+    //cycle through the locations array
+    indexLocation = cycle(locations, indexLocation);
+    //output the new location to the page
+    locationOutput.textContent = locations[indexLocation];
+    });
+    
+    weaponLoadoutBtn.addEventListener ('click', function() {
+    //weapon loadout 
+    //cycle through the weapon loadout array
+    indexWeaponLoadout = cycle(weaponLoadout, indexWeaponLoadout);
+    //output the new weapon loadout to the page
+    weaponLoadoutOutput.textContent = weaponLoadout[indexWeaponLoadout];
+});
+
+    objectiveBtn.addEventListener ('click', function() {
+    //objective
+    //cycle through the objective array
+    indexObjective = cycle(objective, indexObjective);
+    //output the new objective to the page
+    objectiveOutput.textContent = objective[indexObjective];
+});
+
+    riskLevelBtn.addEventListener ('click', function() {
+    //risk level
+    //cycle through the risk level array
+    indexRiskLevel = cycle(riskLevel, indexRiskLevel);
+    //output the new risk level to the page
+    riskLevelOutput.textContent = riskLevel[indexRiskLevel];
+}); 
