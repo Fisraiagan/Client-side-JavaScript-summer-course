@@ -53,3 +53,23 @@ function generateMission() {
          + weaponLoadoutOutput.textContent + ' and your agent type is ' + agentTypeOutput.textContent + '. Good luck!';
     }
 }
+
+
+function resetMission() {
+// reset text content to empty strings 
+    agentTypeOutput.textContent = '';
+    locationOutput.textContent = '';
+    weaponLoadoutOutput.textContent = '';
+    objectiveOutput.textContent = '';
+    riskLevelOutput.textContent = '';
+    missionOutput.textContent = '';
+
+    // reset Index variables to -1 so that the first click on the button will set it to 0 and display the first item in the array
+    indexAgentType = -1;
+    indexLocation = -1;
+    indexWeaponLoadout = -1;
+    indexObjective = -1;
+    indexRiskLevel = -1;
+
+
+}
