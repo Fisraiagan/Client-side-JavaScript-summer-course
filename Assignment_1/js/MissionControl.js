@@ -13,5 +13,10 @@ let objectiveOutput = document.querySelector('#objectiveOutput');
 let riskLevelOutput = document.querySelector('#riskLevelOutput');
 let missionOutput = document.querySelector('#missionOutput');
 
-
+//initalize arrays for each category
+const agentType = ['Bravo', 'Ghost Recon', '007', 'Maverick','Eagle Eye'];
+let locations = ["Arctic Base", "MegaCity", "Jungle Fortress", "Underwater Lab"];
+const weaponLoadout = ['Assault Rifle', 'Sniper Rifle', 'silenced pistol'];
+const objective = ['Reconnaissance', 'Elimination', 'Extraction'];
+const riskLevel = ['Low', 'Medium', 'High'];
 
